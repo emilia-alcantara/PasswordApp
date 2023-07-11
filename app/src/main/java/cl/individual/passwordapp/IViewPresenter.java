@@ -2,8 +2,12 @@ package cl.individual.passwordapp;
 
 public interface IViewPresenter {
 
-    public void mostrarDebil();
-    public void mostrarMedio();
-    public void mostrarFuerte();
-    public void mostrarError();
+    void mostrarDebil();
+    void mostrarMedio();
+    void mostrarFuerte();
+    void mostrarError();
+
+    void mostrarResultadoAColor(String aviso, int color);
+
+
 }

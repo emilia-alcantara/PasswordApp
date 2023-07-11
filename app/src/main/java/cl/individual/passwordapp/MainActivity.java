@@ -47,8 +47,7 @@ public class MainActivity extends AppCompatActivity implements IViewPresenter {
             @Override
             public void onClick(View v) {
                 String password = binding.editPassword.getText().toString();
-                presenter.medirSeguridadClave(password);
-                // binding.txtNivelSeguridad.setText();
+                presenter.evaluarResultadoAColor(password);
             }
         });
     }
@@ -57,21 +56,31 @@ public class MainActivity extends AppCompatActivity implements IViewPresenter {
     @Override
     public void mostrarDebil() {
         binding.txtEvaluadorSimultaneo.setText(R.string.weak_password);
+
     }
 
     @Override
     public void mostrarMedio() {
         binding.txtEvaluadorSimultaneo.setText(R.string.medium_password);
+
     }
 
     @Override
     public void mostrarFuerte() {
         binding.txtEvaluadorSimultaneo.setText(R.string.strong_password);
+
     }
 
 
       @Override
        public void mostrarError() {
        binding.txtEvaluadorSimultaneo.setText(R.string.error_password);
+
        }
+
+    @Override
+    public void mostrarResultadoAColor(String aviso, int color) {
+        binding.txtNivelSeguridad.setText(aviso);
+        binding.txtNivelSeguridad.setBackgroundColor(color);
+    }
 }

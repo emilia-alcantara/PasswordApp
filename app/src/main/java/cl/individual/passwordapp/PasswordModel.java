@@ -11,8 +11,7 @@ public class PasswordModel {
 
         if (password.isEmpty()) {
             return ERROR;
-        }
-         if (password.length() < 5) {
+        } else if (password.length() < 5) {
             return DEBIL;
         } else if (password.equals(password.toLowerCase())) {
             return MEDIO;
