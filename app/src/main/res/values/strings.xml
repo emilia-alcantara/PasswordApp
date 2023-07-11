@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">PasswordApp</string>
+    <string name="ingresa_tu_contrase_a">Ingresa tu contraseña</string>
+    <string name="weak_password">Su contraseña es débil.</string>
+    <string name="medium_password">La seguridad es nivel medio.</string>
+    <string name="strong_password">La seguridad es fuerte.</string>
+    <string name="error_password">Ingrese su contraseña.</string>
 </resources>

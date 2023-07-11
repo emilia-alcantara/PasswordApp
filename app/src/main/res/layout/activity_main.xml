@@ -10,7 +10,7 @@
         android:id="@+id/txtMsgInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingresa tu contraseña"
+        android:text="@string/ingresa_tu_contrase_a"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +30,16 @@
         app:layout_constraintStart_toStartOf="@+id/txtMsgInicial"
         app:layout_constraintTop_toBottomOf="@+id/txtMsgInicial" />
 
+    <TextView
+        android:id="@+id/txtEvaluadorSimultaneo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
+
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
@@ -45,9 +55,10 @@
         android:id="@+id/txtNivelSeguridad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="144dp"
         android:text="Nivel"
         app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="@+id/editPassword"
         app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
