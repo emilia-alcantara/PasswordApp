@@ -7,12 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtMsgInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Ingresa tu contraseña"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Escribe"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtMsgInicial"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/txtMsgInicial"
+        app:layout_constraintTop_toBottomOf="@+id/txtMsgInicial" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Ingresar"
+        app:layout_constraintEnd_toEndOf="@+id/txtNivelSeguridad"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/txtNivelSeguridad"
+        app:layout_constraintTop_toBottomOf="@+id/txtNivelSeguridad" />
+
+    <TextView
+        android:id="@+id/txtNivelSeguridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Nivel"
+        app:layout_constraintEnd_toEndOf="@+id/editPassword"
+        app:layout_constraintStart_toStartOf="@+id/editPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
