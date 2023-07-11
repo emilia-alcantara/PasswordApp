@@ -39,7 +39,7 @@ public void evaluarResultadoAColor(String password) {
     String avisoMedio = "CONTRASEÑA NIVEL MEDIO";
     String avisoFuerte = "CONTRASEÑA FUERTE";
     String avisoError = "ERROR";
-    int colorDebil = Color.GRAY;
+    int colorDebil = Color.LTGRAY;
     int colorMedio = Color.YELLOW;
     int colorFuerte = Color.GREEN;
     int colorError = Color.RED;

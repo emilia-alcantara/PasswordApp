@@ -67,7 +67,6 @@
         android:layout_marginTop="144dp"
         android:fontFamily="@font/farro"
         android:padding="10dp"
-        android:text="Nivel"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/editPassword"
         app:layout_constraintHorizontal_bias="0.525"
